@@ -16,3 +16,16 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+.image-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 350px;
+    object-fit: cover;
+}
