@@ -3,32 +3,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Webiste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvador Robles Herrera</title>
     <link rel="stylesheet" href="styles.css">
+    <!--My logo-->
     <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
+        <!--Navigation menu-->
+        <nav class = "side-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
         <h1>Salvador Robles Herrera</h1>
         <h3>Master's Student in Computer Science</h3>
         <h3>The University of Texas at Austin (UT Austin)</h3>
         <h3>Email: salvadorrh@utexas.edu</h3>
-    </header>
-    <main>
-        
         <img src = "images\me.jpg" alt="Salvador" class="circle-image">
-
         <div>
             <p>I am <span class="auto-type"></span></p>
         </div>
-        <h2>About</h2>
-        <p style="color:black">Hello everyone, I am Salvador, a motivated Master's student in Computer Science with a great work-ethic. 
-            I was born in Ciudad Juarez, in Mexico, and I am currently an international student at UT Austin. I am expecting to graduate in May of 2026.
-            So far I have interned two times as a Software Engineering Intern at Google and one time at Uber. Also, I am enthusiastic student researcher, having 
-            published 6 research papers.
-        </p>
-        <p>This is my Google scholar link, where you can find more about my research papers: </p>
-        <a href="https://scholar.google.com/citations?user=salvador&user=FKLYYwoAAAAJ">Google scholar</a>
+        <section id = "about">
+            <h2>About</h2>
+            <p style="color:black">Hello everyone, I am Salvador, a motivated Master's student in Computer Science with a great work-ethic. 
+                I was born in Ciudad Juarez, in Mexico, and I am currently an international student at UT Austin. I am expecting to graduate in May of 2026.
+                So far I have interned two times as a Software Engineering Intern at Google and one time at Uber. Also, I am enthusiastic student researcher, having 
+                published 6 research papers.
+            </p>
+            <p style="color:black">
+                Hobbies: Weightlifting, competitive soccer, chess, reading
+            </p>
+        </section>
+
         <hr>
 
         <!--Script for types text animation-->
@@ -42,6 +53,16 @@
             })
         </script>
 
+        <section id = "publications">
+            <h2>Publications</h2>
+            <p>This is my Google scholar link, where you can find more about my research papers: </p>
+            <a href="https://scholar.google.com/citations?user=salvador&user=FKLYYwoAAAAJ">Google scholar</a>
+
+            <p><a href="papers/2404.19100v2.pdf" class="link">Predicting Fairness of ML Software Configurations.</a> <strong>Salvador Robles Herrera</strong>, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, and Saeid Tizpaz-Niari, 
+                Proceedings of the 20th International Conference on Predictive Models and Data Analytics in Software Engineering (PROMISE'24)</p>
+            
+        </section>
+        <hr>
         
     </main>
 </body>
