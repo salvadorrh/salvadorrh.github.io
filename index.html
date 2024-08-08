@@ -14,9 +14,9 @@
         <!--Navigation menu-->
         <nav class = "side-nav">
             <ul>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,20 +29,6 @@
             <p>I am <span class="auto-type"></span></p>
         </div>
         <hr>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:salvadorrh@utexas.edu">salvadorrh@utexas.edu</a></p>
-
-            <a href="https://www.linkedin.com/in/salvadorrobles10" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="15">
-                <p>LinkedIn</p>
-            </a>
-            <a href="https://github.com/salvadorrh" target="_blank">
-                <img src="images/github.svg" alt="GitHub" width="15">
-                <p>GitHub</p>
-            </a>
-        </section>
 
         <section id = "about">
             <h2>About</h2>
@@ -57,19 +43,10 @@
             <p style="color:black">
                 Research Interests: Machine Learning, Deep Learning, Responsible AI, AI Fairness
             </p>
+            <a href="docs/CV - Salvador Robles - Austin.pdf" class="link">Curriculum Vitae</a>
+            <a href="docs/Resume Fall 2024.pdf" class="link">Resume</a>
             <hr>
         </section>
-
-        <!--Script for types text animation-->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed(".auto-type", {
-                strings: ["a Master's student", "an ML Researcher", "a Computer Scientist", "a Mathematician"],
-                typeSpeed: 100,
-                backSpeed: 100,
-                loop: true
-            })
-        </script>
 
         <section id = "publications">
             <h2>Publications</h2>
@@ -95,7 +72,28 @@
                 Submitted to an edited book.</p>      
             <hr>
         </section>
-        
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:salvadorrh@utexas.edu">salvadorrh@utexas.edu</a></p>
+
+            <div id="contact-links">
+                <a href="https://www.linkedin.com/in/salvadorrobles10" target="_blank">
+                    <p><img src="images/linkedin.svg" alt="LinkedIn" width="15">LinkedIn</p>
+                </a>
+                <a href="https://github.com/salvadorrh" target="_blank">
+                    
+                    <p><img src="images/github.svg" alt="GitHub" width="15">GitHub</p>
+                </a>
+            </div>
+            <hr>
+        </section>
+
+
+        <!--Script for types text animation-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+
     </main>
 </body>
 </html>
