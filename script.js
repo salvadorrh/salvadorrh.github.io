@@ -6,3 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true
     });
 });
+
+function toggleNav() {
+    var sideNav = document.getElementById("sideNav");
+    var content = document.querySelector(".content");
+
+    if (sideNav.classList.contains("open")) {
+        sideNav.classList.remove("open");
+        content.classList.remove("open");
+    }
+    else {
+        sideNav.classList.add("open");
+        content.classList.add("open");        
+    }
+}
