@@ -10,13 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
 function toggleNav() {
     var sideNav = document.getElementById("sideNav");
     var content = document.querySelector(".content");
+    var menuBtn = document.querySelector(".menu-btn");
 
     if (sideNav.classList.contains("open")) {
         sideNav.classList.remove("open");
         content.classList.remove("open");
+        menuBtn.classList.remove("open");
     }
     else {
         sideNav.classList.add("open");
-        content.classList.add("open");        
+        content.classList.add("open");  
+        menuBtn.classList.add("open");      
     }
 }
