@@ -30,28 +30,42 @@ main {
 }
 
 .circle-image {
+    width: 250px;  /* Fixed width */
+    height: 250px; /* Same as width to ensure perfect circle */
     border-radius: 50%;
-    width: 350px;
-    object-fit: cover;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 3px solid #fff; /* White border */
+    margin: 20px auto; /* Center the image with some vertical spacing */
+    display: block; /* Helps with centering */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
 }
 
-/* Side navigation menu */
+/* Side navigation menu - starts visible */
 .side-nav {
     width: 200px;
     background: #333;
     padding: 1rem;
     position: fixed;
     height: 100%;
-    transition: 0.3s;
+    transition: all 0.3s;
     overflow-x: hidden;
     left: 0;
     top: 0;
     z-index: 2;
+    visibility: visible;
+}
+
+.side-nav.closed {
+    width: 0;
+    padding: 0;
+    visibility: hidden;
 }
 
 .side-nav ul {
-    padding: 60px 0 0 0;
+    padding: 20px 0 0 0;
     list-style-type: none;
+    display: block;
 }
 
 .side-nav li {
@@ -68,23 +82,6 @@ main {
 
 .side-nav a:hover {
     color: #f39c12;
-}
-
-.side-nav.open {
-    width: 200px;
-    visibility: visible;
-}
-
-.content.open {
-    margin-left: 200px;
-}
-
-.side-nav.open ul {
-    display: block;
-}
-
-.side-nav.open + .menu-btn {
-    z-index: 3;
 }
 
 .menu-btn {
@@ -106,20 +103,61 @@ main {
     transition: margin-left 0.3s ease-in-out;
 }
 
-/*Hide sidebar on smaller screens*/
+.content.closed {
+    margin-left: 0;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
     .side-nav {
-        width: 0;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: -50px;
+        left: 0;
         padding: 0;
+        transition: all 0.3s ease;
         visibility: hidden;
+        background: #333;
+    }
+
+    .side-nav.active {
+        top: 0;
+        visibility: visible;
+    }
+
+    .side-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: center;
+        padding: 10px 60px 10px 20px; /* Add right padding for menu button */
+        margin: 0;
+        gap: 20px; /* Add space between navigation items */
+    }
+
+    .side-nav li {
+        margin: 0;
+    }
+
+    .side-nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .menu-btn {
+        right: 10px;
+        left: auto;
+        border-radius: 4px;
+        position: fixed;
+        top: 10px;
+        z-index: 4; /* Ensure button stays on top */
     }
 
     .content {
         margin-left: 0;
-    }
-
-    .menu-btn {
-        display: block;
-        z-index: 3;
+        margin-top: 40px;
+        padding: 1rem;
     }
 }

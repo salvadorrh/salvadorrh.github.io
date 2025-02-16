@@ -5,18 +5,42 @@ document.addEventListener("DOMContentLoaded", function() {
         backSpeed: 100,
         loop: true
     });
+
+    // Initial setup based on screen size
+    setupNavigation();
+
+    // Add resize listener to handle window resizing
+    window.addEventListener('resize', setupNavigation);
 });
 
-function toggleNav() {
-    var sideNav = document.getElementById("sideNav");
-    var content = document.querySelector(".content");
-
-    if (sideNav.classList.contains("open")) {
-        sideNav.classList.remove("open");
-        content.classList.remove("open");
+function setupNavigation() {
+    const sideNav = document.getElementById("sideNav");
+    const content = document.querySelector(".content");
+    
+    if (window.innerWidth <= 768) {
+        // Mobile setup
+        sideNav.classList.remove("closed");
+        content.classList.remove("closed");
+        sideNav.classList.remove("active");
+    } else {
+        // Desktop setup
+        sideNav.classList.remove("active");
+        if (!sideNav.classList.contains("closed")) {
+            content.classList.remove("closed");
+        }
     }
-    else {
-        sideNav.classList.add("open");
-        content.classList.add("open");        
+}
+
+function toggleNav() {
+    const sideNav = document.getElementById("sideNav");
+    const content = document.querySelector(".content");
+
+    if (window.innerWidth <= 768) {
+        // Mobile behavior - just toggle active state
+        sideNav.classList.toggle("active");
+    } else {
+        // Desktop behavior
+        sideNav.classList.toggle("closed");
+        content.classList.toggle("closed");
     }
 }
