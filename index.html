@@ -1,105 +1,115 @@
 <!DOCTYPE html>
-<!--First Website page-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salvador Robles Herrera</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--My logo-->
-    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salvador Robles Herrera</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional: nice readable font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <meta name="description" content="Portfolio of Salvador Robles Herrera — ML & Systems, publications, projects, and contact." />
 </head>
 <body>
-    <header>
-        <!--Navigation menu-->
-        <button class="menu-btn" onclick="toggleNav()"> ☰ Menu </button>
-        <nav class = "side-nav" id="sideNav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#other">Other</a></li>
-            </ul>
-        </nav>
+  <button class="menu-btn" aria-label="Toggle Navigation" onclick="toggleNav()">☰ Menu</button>
 
-    </header>
-    <main class="content">
-        <h1>Salvador Robles Herrera</h1>
-        <h3>Master's Student in Computer Science</h3>
-        <h3>The University of Texas at Austin <a href="https://www.utexas.edu/">(UT Austin)</a></h3>
-        <img src = "images\meUT.jpg" alt="Salvador" class="circle-image">
-        <div>
-            <p>I am <span class="auto-type"></span></p>
+  <nav class="side-nav" id="sideNav" aria-label="Primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#other">Other</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <img src="images/meUT.jpg" alt="Portrait of Salvador Robles Herrera" class="circle-image" />
+      <div class="hero-text">
+        <h1 class="title">Salvador Robles Herrera</h1>
+        <p class="subtitle">
+          <span class="muted">Master’s Student, Computer Science —</span>
+          <a class="inline-link" href="https://www.utexas.edu/" target="_blank" rel="noopener">UT Austin</a>
+        </p>
+        <p class="typed-wrap">I am <span class="auto-type"></span></p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="docs/CV - Salvador Robles - Austin.pdf">Curriculum Vitae</a>
+          <a class="btn" href="docs/Salvador_Robles_new_grad.pdf">Resume</a>
+          <a class="btn ghost" href="#publications">View Publications</a>
         </div>
-        <hr>
+      </div>
+    </header>
 
-        <section id = "about">
-            <h2>About</h2>
-            <p style="color:black">Hello everyone, I am Salvador, a first-year Master's student in Computer Science at The University of Texas at Austin. I am expecting to graduate in May of 2026.
-                So far I have interned two times as a Software Engineering Intern at Google and one time as a Machine Learning Intern at Uber. Also, I am enthusiastic student researcher, having published 6 peer-reviewed research papers.
-                I hold two Bachelor degrees in Computer Science and Mathematics from The University of Texas at El Paso (UTEP).
-            </p>
-            <p style="color:black">
-                Hobbies: Weightlifting, Soccer, Chess, Reading Dostoevsky (top favorite book is The Brothers Karamazov), and Sustainable Gardening.
-            </p>
-            <p style="color:black">
-                Research Interests: Machine Learning, Deep Learning, Responsible AI, Natural Language Processing
-            </p>
-            <a href="docs/CV - Salvador Robles - Austin.pdf" class="link">Curriculum Vitae</a>
-            <a href="docs/Salvador_Robles_new_grad.pdf" class="link">Resume</a>
-            <hr>
-        </section>
+    <hr class="divider" />
 
-        <section id = "publications">
-            <h2>Publications</h2>
-            <p>This is my Google scholar link, where you can find more about my research work: 
-                <a href="https://scholar.google.com/citations?user=salvador&user=FKLYYwoAAAAJ">Google Scholar</a></p>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <p>
+        Hello! I’m Salvador, a first-year Master’s student in Computer Science at The University of Texas at Austin (graduating May 2026).
+        I’ve interned twice as a Software Engineer at Google and once as a Machine Learning Engineer at Uber, and I enjoy research—
+        so far I’ve published six peer-reviewed papers. I hold dual bachelor’s degrees in Computer Science and Mathematics from UTEP.
+      </p>
+      <p><strong>Research interests:</strong> Machine Learning, Deep Learning, Responsible AI, NLP.</p>
+      <p><strong>Hobbies:</strong> Weightlifting, Soccer, Chess, Dostoevsky (favorite: <em>The Brothers Karamazov</em>), and sustainable gardening.</p>
+    </section>
 
-            <p><a href="https://arxiv.org/abs/2404.19100" class="link">Predicting Fairness of ML Software Configurations.</a> <strong>Salvador Robles Herrera</strong>, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, and Saeid Tizpaz-Niari, 
-                Proceedings of the 20th International Conference on Predictive Models and Data Analytics in Software Engineering (PROMISE'24).[<a href="https://youtu.be/IfKBoBR7RTE">Presentation</a>]</p>
-            
-            <p><a href="papers/When Is Deep Learning Better and When Is Shallow Learning Better.pdf" class="link">When is Deep Learning Better and When Is Shallow Learning Better: Qualitative Analysis.</a> <strong>Salvador Robles Herrera</strong>, Martine Ceberio, Vladik Kreinovich,
-                International Journal of Parallel, Emergent and Distributed Systems, 2022</p>
+    <hr class="divider" />
 
-            <p><a href="papers/How to Get the Most Accurate Measurement-Based Estimates.pdf" class="link">How to Get the Most Accurate Measurement-Based Estimates.</a> <strong>Salvador Robles Herrera</strong>, Martine Ceberio, Vladik Kreinovich,
-                In: M. Ceberio and V. Kreinovich (eds.), Uncertainty, Constraints, and Decision Making, Springer, Cham, Switzerland, 2023, pp. 165–175</p>
-            
-            <p><a href="papers/Computing the Range of a Function-of-Few-Linear-Combinations.pdf" class="link">Computing the Range of a Function-of-Few-Linear-Combinations Under Linear Constraints: A Feasible Algorithm.</a> <strong>Salvador Robles Herrera</strong>, Martine Ceberio, Vladik Kreinovich,
-                Proceedings of the 15th International Workshop on Constraint Programming and Decision Making CoProD’2022, Halifax, Nova Scotia, Canada, May 30, 2022</p>
-                
-            <p><a href="papers/Why Model Order Reduction.pdf" class="link">Why Model Order Reduction.</a> <strong>Salvador Robles Herrera</strong>, Martine Ceberio, Vladik Kreinovich,
-                In: M. Ceberio and V. Kreinovich (eds.), Decision Making under Uncertainty and Constraints: A Why-Book, Springer, Cham, Switzerland, 2023, pp. 233–237</p>
-                  
-            <p><a href="papers/Foundations of Neural Networks Explain the Empirical Success.pdf" class="link">Foundations of Neural Networks explain the Empirical Success of the ‘Surrogate' Approach to Ordinal Regression – and Recommend What Next.</a> <strong>Salvador Robles Herrera</strong>, Martine Ceberio, Vladik Kreinovich,
-                Submitted to an edited book.</p>      
-            <hr>
-        </section>
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Publications</h2>
+        <a class="inline-link" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar →</a>
+      </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:salvadorroblesherrera@gmail.com">salvadorroblesherrera@gmail.com</a></p>
+      <!-- Filters (optional; works immediately) -->
+      <div class="filter-row">
+        <input id="pub-search" class="input" type="search" placeholder="Search title, venue, year…" oninput="filterPublications()" />
+        <select id="pub-year" class="input" onchange="filterPublications()">
+          <option value="">All years</option>
+        </select>
+      </div>
 
-            <div id="contact-links">
-                <a href="https://www.linkedin.com/in/salvadorrobles10" target="_blank">
-                    <p><img src="images/linkedin.svg" alt="LinkedIn" width="15">LinkedIn</p>
-                </a>
-                <a href="https://github.com/salvadorrh" target="_blank">
-                    
-                    <p><img src="images/github.svg" alt="GitHub" width="15">GitHub</p>
-                </a>
-            </div>
-            <hr>
-        </section>
+      <!-- Publications grid will be rendered here -->
+      <div id="pub-grid" class="card-grid"></div>
+    </section>
 
-        <section id="other">
-            <h2>Other</h2>
-            <p>Fall 2024: Neural Networks Course <a href="NeuralNets.html">Project</a></p>
-        </section>
+    <hr class="divider" />
 
-        <!--Script for types text animation-->
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src="script.js"></script>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a class="inline-link" href="mailto:salvadorroblesherrera@gmail.com">salvadorroblesherrera@gmail.com</a></p>
+      <div class="socials">
+        <a class="social" href="https://www.linkedin.com/in/salvadorrobles10" target="_blank" rel="noopener">
+          <img src="images/linkedin.svg" alt="" width="18" height="18" /> LinkedIn
+        </a>
+        <a class="social" href="https://github.com/salvadorrh" target="_blank" rel="noopener">
+          <img src="images/github.svg" alt="" width="18" height="18" /> GitHub
+        </a>
+      </div>
+    </section>
 
-    </main>
+    <hr class="divider" />
+
+    <!-- OTHER -->
+    <section id="other" class="section">
+      <h2 class="section-title">Other</h2>
+      <p>Fall 2024: Neural Networks Course <a class="inline-link" href="NeuralNets.html">Project</a></p>
+    </section>
+
+    <footer class="footer">
+      <a href="#top" class="to-top">↑ Back to top</a>
+      <span class="muted">© <span id="year"></span> Salvador Robles Herrera</span>
+    </footer>
+  </main>
+
+  <!-- typed.js + main script -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
