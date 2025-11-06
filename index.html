@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Salvador Robles Herrera</title>
+  <title>Salvador Robles</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Optional: nice readable font -->
+  <!-- nice readable font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
-  <meta name="description" content="Portfolio of Salvador Robles Herrera — ML & Systems, publications, projects, and contact." />
+  <meta name="description" content="Portfolio of Salvador Robles Herrera -> AI, publications, projects, and contact." />
 </head>
 <body>
   <button class="menu-btn" aria-label="Toggle Navigation" onclick="toggleNav()">☰ Menu</button>
@@ -49,12 +49,12 @@
     <section id="about" class="section">
       <h2 class="section-title">About</h2>
       <p>
-        Hello! I’m Salvador, a first-year Master’s student in Computer Science at The University of Texas at Austin (graduating May 2026).
-        I’ve interned twice as a Software Engineer at Google and once as a Machine Learning Engineer at Uber, and I enjoy research—
-        so far I’ve published six peer-reviewed papers. I hold dual bachelor’s degrees in Computer Science and Mathematics from UTEP.
+        Hey there! I'm Salvador, a Master's student in Computer Science at The University of Texas at Austin (graduating May 2026).
+        I've interned twice as a Software Engineer at Google and once as a Machine Learning Engineer at Uber, and I enjoy doing research!
+        So far I've published six peer-reviewed papers as a first author. I hold dual bachelor's degrees in Computer Science and Mathematics from UTEP.
       </p>
-      <p><strong>Research interests:</strong> Machine Learning, Deep Learning, Responsible AI, NLP.</p>
-      <p><strong>Hobbies:</strong> Weightlifting, Soccer, Chess, Dostoevsky (favorite: <em>The Brothers Karamazov</em>), and sustainable gardening.</p>
+      <p><strong>Research interests:</strong> NLP + Vision, Deep Learning, Responsible AI.</p>
+      <p><strong>Hobbies:</strong> Soccer, chess, weightlifting, reading Dostoevsky (favorite: <em>The Brothers Karamazov</em>), and sustainable gardening.</p>
     </section>
 
     <hr class="divider" />
@@ -66,7 +66,7 @@
         <a class="inline-link" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar →</a>
       </div>
 
-      <!-- Filters (optional; works immediately) -->
+      <!-- Filters -->
       <div class="filter-row">
         <input id="pub-search" class="input" type="search" placeholder="Search title, venue, year…" oninput="filterPublications()" />
         <select id="pub-year" class="input" onchange="filterPublications()">
@@ -74,7 +74,7 @@
         </select>
       </div>
 
-      <!-- Publications grid will be rendered here -->
+      <!-- Publications grid rendered here -->
       <div id="pub-grid" class="card-grid"></div>
     </section>
 
@@ -104,7 +104,7 @@
 
     <footer class="footer">
       <a href="#top" class="to-top">↑ Back to top</a>
-      <span class="muted">© <span id="year"></span> Salvador Robles Herrera</span>
+      <span class="muted">© <span id="year"></span> Salvador Robles</span>
     </footer>
   </main>
 
