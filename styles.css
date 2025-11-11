@@ -182,8 +182,8 @@ body{
 /* One project per row, image left, text right */
 .project-card {
   display: grid;
-  grid-template-columns: 2fr 3fr; /* image 40%, text 60% */
-  gap: 18px;
+  grid-template-columns: 1.3fr 2fr; /* image 40%, text 60% */
+  gap: 24px;
   align-items: stretch;
   background: #fff;
   border: 1px solid #e7e7ea;
