@@ -106,7 +106,7 @@
     .shelter { background: #43a047; }
     .none { background: #999; }
 
-    /* ------- LOADING SPINNER ------- */
+    /* Spinner */
     .spinner {
         border: 5px solid #eee;
         border-top: 5px solid #007bff;
@@ -172,23 +172,13 @@ async function classify() {
     spinner.style.display = "block";
 
     try {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => {
-            controller.abort();
-        }, 20000); // 20-second timeout
-
-        status.textContent = "⏳ Waking up server... (Render free tier cold start)";
-
         const res = await fetch(API_URL, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
-            body: JSON.stringify({ text }),
-            signal: controller.signal
+            body: JSON.stringify({ text })
         });
 
-        clearTimeout(timeout);
         spinner.style.display = "none";
-        status.textContent = "";
 
         if (!res.ok) {
             throw new Error("Server error");
@@ -199,7 +189,7 @@ async function classify() {
 
     } catch (err) {
         spinner.style.display = "none";
-        status.innerHTML = "<span class='error'>⚠️ Server unavailable or waking up. Try again in a few seconds.</span>";
+        status.innerHTML = "<span class='error'>⚠️ Something went wrong. Try again.</span>";
     }
 }
 
