@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Typed(".auto-type", {
       strings: [
         "a Master's student",
-        "an ML researcher",
+        "an ML Researcher",
         "a computer scientist",
         "a mathematician",
       ],

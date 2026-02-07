@@ -1,3 +1,28 @@
+/* Skills badges */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 2px 0; /* Reduced bottom margin */
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 12px;
+  background: var(--surface-2);
+  color: var(--brand);
+  border: 1px solid var(--surface-2);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background .12s ease, border-color .12s ease;
+}
+
+.skill:hover {
+  background: var(--surface);
+  border-color: var(--brand);
+}
+
 :root{
   --bg:#0f1220;
   --surface:#151a2e;
@@ -232,7 +257,7 @@ body{
 }
 
 .project-content h3 {
-  margin: 0 0 8px 0;
+  margin: 0 0 2px 0;
   font-weight: 600;
   font-size: 1.15rem;
 }
@@ -245,7 +270,7 @@ body{
 
 /* Links as small buttons */
 .project-links {
-  margin-top: 10px;
+  margin-top: 2px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
