@@ -53,7 +53,7 @@ const PUBLICATIONS = [
   {
     title: "Predicting Fairness of ML Software Configurations",
     authors: "<strong>Salvador Robles</strong>, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, Saeid Tizpaz-Niari",
-    venue: "PROMISE 2024",
+    venue: "Proceedings of the 20th Intl Conference on Predictive Models and Data Analytics in Software Engineering (PROMISE 2024)",
     year: 2024,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2404.19100" },
@@ -64,7 +64,7 @@ const PUBLICATIONS = [
   {
     title: "When is Deep Learning Better and When Is Shallow Learning Better: Qualitative Analysis",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
-    venue: "Int. J. of Parallel, Emergent and Distributed Systems",
+    venue: "International Journal of Parallel, Emergent and Distributed Systems (IJPEDS 2022)",
     year: 2022,
     links: [
       { label: "PDF", href: "papers/When Is Deep Learning Better and When Is Shallow Learning Better.pdf" }
@@ -73,7 +73,7 @@ const PUBLICATIONS = [
   {
     title: "How to Get the Most Accurate Measurement-Based Estimates",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
-    venue: "Springer, 2023 (pp. 165-175)",
+    venue: "Uncertainty, Constraints, and Decision Making, Springer, 2023 (pp. 165-175)",
     year: 2023,
     links: [
       { label: "PDF", href: "papers/How to Get the Most Accurate Measurement-Based Estimates.pdf" }
@@ -82,7 +82,7 @@ const PUBLICATIONS = [
   {
     title: "Computing the Range of a Function-of-Few-Linear-Combinations Under Linear Constraints: A Feasible Algorithm",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
-    venue: "CoProD 2022 (Halifax)",
+    venue: "Proceedings of the 15th International Workshop on Constraint Programming and Decision Making (CoProD 2022)",
     year: 2022,
     links: [
       { label: "PDF", href: "papers/Computing the Range of a Function-of-Few-Linear-Combinations.pdf" }
@@ -91,17 +91,17 @@ const PUBLICATIONS = [
   {
     title: "Why Model Order Reduction",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
-    venue: "Springer, 2023 (pp. 233-237)",
-    year: 2023,
+    venue: "Decision Making under Uncertainty and Constraints: A Why Book, Springer, 2023 (pp. 233-237)",
+    year: 2021,
     links: [
       { label: "PDF", href: "papers/Why Model Order Reduction.pdf" }
     ],
   },
   {
-    title: "Foundations of Neural Networks explain the Success of the 'Surrogate' Approach to Ordinal Regression - and Recommend What’s Next",
+    title: "Foundations of Neural Networks explain the Success of the 'Surrogate' Approach to Ordinal Regression - and Recommend What's Next",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
     venue: "Submitted (book chapter)",
-    year: 2024,
+    year: 2023,
     links: [
       { label: "PDF", href: "papers/Foundations of Neural Networks Explain the Empirical Success.pdf" }
     ],

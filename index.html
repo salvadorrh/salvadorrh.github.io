@@ -18,8 +18,8 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -36,7 +36,7 @@
         <p class="typed-wrap">I am <span class="auto-type"></span></p>
 
         <div class="cta-row">
-          <a class="btn" href="docs/Salvador_Robles_new_grad.pdf">Resume 2026</a>
+          <a class="btn primary" href="docs/Salvador_Robles_grad.pdf">Resume 2026</a>
           <a class="btn primary" href="docs/CV - Salvador Robles - Austin.pdf">Curriculum Vitae</a>
           <a class="btn ghost" href="#publications">View Publications</a>
         </div>
@@ -122,11 +122,18 @@
         <img src="images/vr.jpg" alt="VR">
       </div>
       <div class="project-content">
-        <h3>Muscle Growth in Motion</h3>
-        <p>Maximizing muscle growth isn't just about lifting heavy, it's about doing each rep with the right tempo, 
-          form, and range of motion (ROM). There has been trend on systems for workout feedback and assistance, but most 
-          of the existing systems focus entirely on form, overlooking other key aspects that affect hypertrophy and injury
-          risk.</p>
+        <h3>Towards Maximizing Muscle Growth in Motion</h3>
+        <p>Built a video exercise evaluation system to classify rep quality across tempo, form, and range of motion (ROM). 
+          Compared multiple approaches, including a VLM (InternVideo2), pose-based analysis, and temporal alignment (TCC), 
+          highlighting tradeoffs in general video understanding, with a focus on tempo detection for 
+          hypertrophy training.</p>
+
+
+        <div class="skills">
+          <span class="skill">Vision-Language Models</span>
+          <span class="skill">Pose Estimation</span>
+          <span class="skill">TCC</span>
+        </div>  
         <div class="project-links">
           <a class="btn" href="https://github.com/salvadorrh/Visual-Recognition-Class/tree/main/Maximizing-Muscle-Growth" target="_blank">GitHub</a>
         </div>
@@ -140,12 +147,74 @@
         <img src="images/agents.png" alt="VR">
       </div>
       <div class="project-content">
-        <h3>Multi-Agent Evolutionary Computation</h3>
-        <p>We provide a systematic approach to enhancing multi-agent systems by integrating principles from Evolutionary Computation 
-          and leveraging the capabilities of Large Language Models (LLMs). In our framework, LLM agents act as independent evolutionary operators, 
-          facilitating the creation and iterative refinement of solutions.</p>
+        <h3>Evolutionary Optimization with Multi-Agent System</h3>
+        <p>Built an evolutionary-inspired multi-agent LLM system where agents act as population generator, mutator, crossover, and fitness
+           evaluator. Used LLM-based evaluation with few-shot prompting and showed consistent performance gains over simpler agent baselines 
+           in optimization tasks.</p>
+
+        <div class="skills">
+          <span class="skill">LLM Agents</span>
+          <span class="skill">Multi-Agent</span>
+          <span class="skill">Evolutionary Computation</span>
+          <span class="skill">LLM Eval</span>
+        </div>
+
+
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/Neural-Networks-Class" target="_blank">GitHub</a>
+          <a class="btn" href="https://github.com/salvadorrh/Neural-Networks-Class/tree/main/Multi-Agent-System-Optimization" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="images/spatial_reasoning.png" alt="VR">
+      </div>
+      <div class="project-content">
+        <h3>Benchmarking Spatial Reasoning in Vision-Language Models</h3>
+            <p>
+              Benchmarked spatial reasoning and grounding ability in vision-language models, focusing on left–right 
+              consistency and size perception. Evaluated SOTA VLMs across 5k+ COCO images and 700+ synthetic scenes 
+              to measure robustness on spatial relationship tasks.
+            </p>
+
+            <div class="skills">
+              <span class="skill">Transformers</span>
+              <span class="skill">OpenCV</span>
+              <span class="skill">VLM Benchmarking</span>
+              <span class="skill">Spatial Reasoning</span>
+            </div>
+
+        <div class="project-links">
+          <a class="btn" href="https://github.com/salvadorrh/Grounded-NLP/" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project -->
+    <div class="project-card">
+      <div class="thumb">
+        <img src="images/soccer.png" alt="AI Sports Coach">
+      </div>
+      <div class="project-content">
+        <h3>Multimodal Expert Sports Coaching System</h3>
+        <p>
+          Developing a multimodal AI sports coach that generates expert-style feedback from exercise videos using 
+          vision-language models. Built evaluation pipelines aligned with human coaching judgments using 30k+ 
+          coach-commentary samples and large-scale video data.
+        </p>
+
+        <div class="skills">
+          <span class="skill">VLMs</span>
+          <span class="skill">Multimodal AI</span>
+          <span class="skill">Video Understanding</span>
+          <span class="skill">Human-Aligned Eval.</span>
+        </div>
+
+        <div class="project-links">
+          <a class="btn" href="https://github.com/salvadorrh/judge-commentary-llm" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
