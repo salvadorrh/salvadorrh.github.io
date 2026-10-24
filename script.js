@@ -38,6 +38,7 @@ function setupNavigation() {
     sideNav.classList.remove("active");
     sideNav.classList.remove("closed");
   }
+  syncNavState();
 }
 function toggleNav() {
   const sideNav = document.getElementById("sideNav");
@@ -46,6 +47,12 @@ function toggleNav() {
   } else {
     sideNav.classList.toggle("closed");
   }
+  syncNavState();
+}
+// Lets the content column move over when the desktop nav is hidden
+function syncNavState() {
+  const closed = document.getElementById("sideNav").classList.contains("closed");
+  document.body.classList.toggle("nav-closed", closed && window.innerWidth > 860);
 }
 
 /* ======== PUBLICATIONS DATA ======== */
