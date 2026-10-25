@@ -9,7 +9,7 @@
   <!-- nice readable font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
-  <meta name="description" content="Portfolio of Salvador Robles -> AI, publications, projects, and contact." />
+  <meta name="description" content="Portfolio of Salvador Robles: AI, publications, projects, and contact." />
 </head>
 <body>
   <button class="menu-btn" aria-label="Toggle Navigation" onclick="toggleNav()">☰ Menu</button>
@@ -17,6 +17,7 @@
   <nav class="side-nav" id="sideNav" aria-label="Primary">
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -51,11 +52,48 @@
       <p>
         How's it going?! I'm Salvador, a Master's student in Computer Science at The University of Texas at Austin.
         I've interned twice as a Software Engineer at Google and once as a Machine Learning Engineer at Uber, and I enjoy doing research!
-        So far I've published six peer-reviewed papers as a first author (going from Theoretical ML to Fairness and Responsible AI). 
+        So far I've published five peer-reviewed papers as a first author, with one more under review (going from Theoretical ML to Fairness and Responsible AI). 
         I hold dual bachelor's degrees in Computer Science and Mathematics from The University of Texas at El Paso with a concentration in Statistics and Data Analytics.
       </p>
       <p><strong>Research interests:</strong> Multimodal AI (Vision + Text), Natural Language Processing, Agentic AI, and Responsible AI (e.g. Alignment).</p>
       <p><strong>Hobbies:</strong> Soccer, chess, weightlifting, reading Dostoevsky (favorite: <em>The Brothers Karamazov</em>), and sustainable gardening.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-head">
+            <h3>Teaching Assistant <span class="muted">· The University of Texas at Austin</span></h3>
+            <span class="badge">Aug 2024 – Present</span>
+          </div>
+          <p class="muted">AI Agents, NLP, and Data Analytics. Designed and graded 30+ Python assignments covering ML, transformers, LLMs, and agents, and tutored 100+ students in office hours.</p>
+        </article>
+        <article class="job">
+          <div class="job-head">
+            <h3>Software Engineering Intern <span class="muted">· Uber</span></h3>
+            <span class="badge">Summer 2022</span>
+          </div>
+          <p class="muted">Integrated ML models into Uber's DataK9 platform to flag sensitive user data, raising accuracy from 87% to 93% across 400k+ datasets, and built a Scala/Spark pipeline that cut latency by 12%.</p>
+        </article>
+        <article class="job">
+          <div class="job-head">
+            <h3>Software Engineering Intern <span class="muted">· Google</span></h3>
+            <span class="badge">Summer 2021</span>
+          </div>
+          <p class="muted">Cloud AI: helped migrate large-scale ML workloads from Borg to Vertex AI (1k+ pipelines) and built a multi-threaded C++ handler that improved throughput by 12%.</p>
+        </article>
+        <article class="job">
+          <div class="job-head">
+            <h3>STEP Intern <span class="muted">· Google</span></h3>
+            <span class="badge">Summer 2020</span>
+          </div>
+          <p class="muted">Built a full-stack route planner on the Google Directions API that ranks the safest routes using a datastore of 500 crime zones.</p>
+        </article>
+      </div>
     </section>
 
     <hr class="divider" />
@@ -83,8 +121,8 @@
 
     <!-- PROJECTS -->
     
-<section id="projects">
-  <h2>Projects</h2>
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
 
   <div class="projects-container">
 
@@ -92,7 +130,7 @@
     <!-- Project -->
     <div class="project-card">
       <div class="thumb">
-        <img src="images/aid_related.png" alt="VR">
+        <img src="images/aid_related.png" alt="Word cloud of disaster response messages">
       </div>
       <div class="project-content">
         <h3>Disaster Response Message Classification</h3>
@@ -110,8 +148,8 @@
         </div>
 
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/disaster-response-api/" target="_blank">GitHub</a>
-          <a class="btn" href="disaster_classifier.html" target="_blank">App</a>
+          <a class="btn" href="https://github.com/salvadorrh/disaster-response-api/" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="disaster_classifier.html" target="_blank" rel="noopener">App</a>
         </div>
       </div>
     </div>
@@ -119,7 +157,7 @@
     <!-- Project -->
     <div class="project-card">
       <div class="thumb">
-        <img src="images/vr.jpg" alt="VR">
+        <img src="images/vr.jpg" alt="Pipeline diagram for exercise video evaluation">
       </div>
       <div class="project-content">
         <h3>Towards Maximizing Muscle Growth in Motion</h3>
@@ -135,7 +173,7 @@
           <span class="skill">TCC</span>
         </div>  
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/Visual-Recognition-Class/tree/main/Maximizing-Muscle-Growth" target="_blank">GitHub</a>
+          <a class="btn" href="https://github.com/salvadorrh/Visual-Recognition-Class/tree/main/Maximizing-Muscle-Growth" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -144,7 +182,7 @@
     <!-- Project -->
     <div class="project-card">
       <div class="thumb">
-        <img src="images/agents.png" alt="VR">
+        <img src="images/agents.png" alt="Diagram of the evolutionary multi-agent loop">
       </div>
       <div class="project-content">
         <h3>Evolutionary Optimization with Multi-Agent System</h3>
@@ -161,7 +199,7 @@
 
 
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/Neural-Networks-Class/tree/main/Multi-Agent-System-Optimization" target="_blank">GitHub</a>
+          <a class="btn" href="https://github.com/salvadorrh/Neural-Networks-Class/tree/main/Multi-Agent-System-Optimization" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -170,7 +208,7 @@
     <!-- Project -->
     <div class="project-card">
       <div class="thumb">
-        <img src="images/spatial_reasoning.png" alt="VR">
+        <img src="images/spatial_reasoning.png" alt="COCO image with a wine glass and fork boxed for a spatial question">
       </div>
       <div class="project-content">
         <h3>Benchmarking Spatial Reasoning in Vision-Language Models</h3>
@@ -188,7 +226,7 @@
             </div>
 
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/Grounded-NLP/" target="_blank">GitHub</a>
+          <a class="btn" href="https://github.com/salvadorrh/Grounded-NLP/" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>
@@ -214,7 +252,7 @@
         </div>
 
         <div class="project-links">
-          <a class="btn" href="https://github.com/salvadorrh/judge-commentary-llm" target="_blank">GitHub</a>
+          <a class="btn" href="https://github.com/salvadorrh/judge-commentary-llm" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
     </div>

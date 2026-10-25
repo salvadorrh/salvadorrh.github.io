@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial nav setup + on resize
   setupNavigation();
   window.addEventListener("resize", setupNavigation);
+  // On phones, close the menu after picking a section
+  document.querySelectorAll("#sideNav a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 860) document.getElementById("sideNav").classList.remove("active");
+    });
+  });
 
   // Publications render
   renderPublications(PUBLICATIONS);
@@ -99,7 +105,7 @@ const PUBLICATIONS = [
     title: "Why Model Order Reduction",
     authors: "<strong>Salvador Robles</strong>, Martine Ceberio, Vladik Kreinovich",
     venue: "Decision Making under Uncertainty and Constraints: A Why Book, Springer, 2023 (pp. 233-237)",
-    year: 2021,
+    year: 2023,
     links: [
       { label: "PDF", href: "papers/Why Model Order Reduction.pdf" }
     ],
